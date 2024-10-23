@@ -3,6 +3,8 @@ primes = []
 not_primes = []
 is_prime = 0
 for i in numbers: # перебор элементов входящих в список numbers
+    if i == 1:
+        continue
     if i > 1:
         is_prime = True
         for j in range(2, i):
